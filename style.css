@@ -1,0 +1,30 @@
+header {
+    background: #b2cbe4;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+nav {
+    background: rgba(130, 164, 237, 0.8);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background: #33b0eb;
+}
+
+button:hover {
+    background: #4eb3e9;
+}

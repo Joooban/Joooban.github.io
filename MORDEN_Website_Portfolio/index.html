@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morden Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" id="about-link">About Me</a>
+        <a href="#" id="projects-link">Projects</a>
+        <a href="#" id="recognition-link">Recognitions</a>
+        <a href="#" id="contact-link">Contact</a>
+    </div>
+
+    <div class="main-content">
+         <div class="container" id="about-me">
+            <div class="content">
+                <div class="text-content">
+                    <h1>Hi - I'm Jhouvann</h1>
+                    <h2>Welcome to my Digital Portfolio</h2>
+                    <p>
+                        I am Jhouvann S. Morden, a second-year Computer Science student at Mapúa Malayan Colleges Mindanao. 
+                        I have a deep passion for coding and data science, and I enjoy problem-solving, especially in finding efficient and effective solutions through technology. 
+                        My goal is to continuously enhance my technical skills and expertise to pursue my dream of becoming a data scientist while contributing innovative solutions to the field of computer science. 
+                    </p> 
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/jovan.morden" target="_blank" class="social-icon" title="Vist my Facebook Account"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/jobaan21/" target="_blank" class="social-icon"title="Vist my Instagram Account"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jhouvann-morden-9a7544294/" target="_blank" class="social-icon"title="Vist my LinkedIn Account"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Joooban" target="_blank" class="social-icon" title="Visit my GitHub Account"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <img src="pp.png" alt="Profile Picture" class="profile-image">
+            </div>
+        </div>
+
+        <div class="container2" id="projects" style="display: none;">
+            <h1 class="featured-title">FEATURED PROJECTS/<BR>ASSIGNMENTS</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                     <p class="project-title">Margatron</p>
+                    <button class="project-btn" title="Learn more about Margatron" onclick="openModal('Margatron', 'Margatron is an AI-powered chatbot with the knowledge of the MMCM website. It is designed to assist prospective students with their admission queries and provide a user-friendly experience.', 'margratron.gif', 'https://github.com/vennDiagramm/Group-4-System-Margatron-Admissions-Buddy.git')">Learn More</button>
+                </div>
+                <div class="project-card">
+                     <p class="project-title">OCU Challenge!</p>
+                    <button class="project-btn" title="Learn more about OCU Challenge!" onclick="openModal('Ocean Clean-up Challenge', 'Ocean Clean-up Challenge is a game that provides an engaging and interactive platform to raise awareness about ocean pollution. It encourages players to actively participate in ocean conservation efforts by learning about the impact of pollution. By inspiring and empowering individuals, this game aims to contribute to a collective effort in preserving our oceans.', 'ocu.gif', 'https://github.com/Joooban/Morden_OceanCleanupChallenge.git')">Learn More</button>
+                </div>
+                <div class="project-card">
+                     <p class="project-title">Jolen's IMS</p>
+                    <button class="project-btn" title="Learn more about Jolen'IMS"onclick="openModal('Jolen\'s IMS', 'Jolen\'s Inventory Management System (IMS) is a comprehensive solution that helps businesses track stock levels, manage orders, and streamline procurement. It was created with the aim of streamlining the management process of the bike shop of the client.', 'bms.gif', 'https://github.com/Joooban/BikeInventoryManagementSystem')">Learn More</button>
+                </div>
+                <div class="project-card">
+                     <p class="project-title">EverGreen DMS</p>
+                    <button class="project-btn" title="Learn more about EverGreen DMS" onclick="openModal('EverGreen Dorm Managament System', 'Evergreen Dormitory Management System was comprehensive and efficient software solution created to resolve the issues and challenges present in the day-to-day  operations faced by Evergreen Dormitory. This project allowed me to learn more about software development, handling basic GUIs, and other important factors to consider when creating software.', 'egdms.png', 'https://github.com/vennDiagramm/EGD-Management-System.git')">Learn More</button>
+                </div>
+                <div class="project-card">
+                     <p class="project-title">Explore PH Tours</p>
+                    <button class="project-btn" title="Learn more about Explore PH Tours" onclick="openModal('Explore PH Tours', 'Explore PH Tours is a simple yet informative project built with HTML and CSS. It was designed as part of an assignment to help us practice the foundational aspects of web development, focusing on the structure and styling of static web pages', 'explore.png', 'https://github.com/Joooban/Joooban.github.io.git')">Learn More</button>
+                </div>
+                <div class="project-card">
+                     <p class="project-title">Term Schedule Table</p>
+                    <button class="project-btn" title="Learn more about Term Schedule Table" onclick="openModal('Term Schedule Table', 'The Term Schedule Table is a static HTML project that displays my current second-term schedule. This assignment was designed to help us practice HTML table elements and improve our understanding of table tags. ', 'term.png', 'https://github.com/Joooban/Joooban.github.io.git')">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modalContent">
+                    <h2 id="modalTitle"></h2>
+                    <img id="modalImage" src="" alt="Project Image">
+                    <p id="modalDescription"></p>
+                    <a id="modalLink" title = "Visit Repository" href="#" target="_blank" class="project-btn" style="display: none;">Visit Project</a>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="container3" id="recognition" style="display: none;">
+            <h2>Affiliations</h2>
+            <div class="affiliations">
+                <div class="affiliation">
+                    <img src="code.png" alt="CODE Logo">
+                    <p><strong>CODE (Coding Organization for Digital Excellence)</strong><br>
+                        Internal Vice-President<br>(2023-2024)
+                    </p>
+                </div>
+                <div class="affiliation">
+                    <img src="css.png" alt="CSS Logo">
+                    <p><strong>CSS (Computing Students Society)</strong><br>
+                        Internal Vice-President<br>(2024-2025)
+                    </p>
+                </div>
+                <div class="affiliation">
+                    <img src="psits.png" alt="PSITS Logo">
+                    <p><strong>PSITS (Philippine Society of Information Technology Students)</strong><br>
+                        Auditor<br>(2024-2025)
+                    </p>
+                </div>
+            </div>
+        
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <div class="certification">
+                    <img src="mos.png" alt="Microsoft Excel Office Certification">
+                    <p><strong> Microsoft Excel Office Specialist</strong></p>
+                </div>
+                <div class="certification">
+                    <img src="datascience.png" alt="datascience">
+                    <p><strong>Data Science Certification</strong></p>
+                </div>
+                <div class="certification">
+                    <img src="java.png" alt="java">
+                    <p><strong>Software Programming Certification</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+
+        <div class="container4" id="contacts" style="display: none;">
+            <h2>Contact Me</h2>
+            <div class="contacts-div">
+            <p id="email">Email: <a href="mailto:jvanmorden@gmail.com" id="email">jvanmorden@gmail.com</a></p>
+            <p id="email">Phone Number: 09276088042 / 09916521676</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/jovan.morden" target="_blank" class="social-icon" title="Vist my Facebook Account"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/jobaan21/" target="_blank" class="social-icon"title="Vist my Instagram Account"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jhouvann-morden-9a7544294/" target="_blank" class="social-icon"title="Vist my LinkedIn Account"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Joooban" target="_blank" class="social-icon" title="Visit my GitHub Account"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

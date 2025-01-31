@@ -36,6 +36,13 @@ body {
     border-radius: 5px;
 }
 
+.sidebar-logo {
+    width: 300px;   
+    height: auto;   
+    margin-top: -200px;
+    margin-bottom: 10px;   
+    align-self: center;  
+}
 
 .main-content {
     display: flex;

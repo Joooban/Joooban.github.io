@@ -73,3 +73,17 @@ function openModal(title, description, imageSrc = '', linkHref = '') {
 function closeModal() {
     document.getElementById("projectModal").style.display = "none";
 }
+document.querySelectorAll('.certImg_img').forEach(image => {
+    image.onclick = (event) => {
+        const popUp = document.querySelector('.popUpImg');
+        const popUpImg = popUp.querySelector('img');
+        popUpImg.src = event.target.src;
+        popUp.style.display = 'flex';
+    };
+});
+
+document.querySelector('.popUpImg').addEventListener('click', (event) => {
+    if (event.target.tagName !== 'IMG') {
+        document.querySelector('.popUpImg').style.display = 'none';
+    }
+});

@@ -36,14 +36,13 @@ body {
     border-radius: 5px;
 }
 
-.container {
-    width: 80%;
+
+.main-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 200px;
-    margin-top: 200px;
-}
+    width: 80%;
+  }
 
 .content {
     background: white;
@@ -128,8 +127,8 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: center;
-    margin-left: 160px;
-    margin-top: 160px;
+    margin-left: 130px;
+    margin-top: 50px;
     margin-right: auto;
     background: white;
     padding: 40px;
@@ -207,9 +206,9 @@ p {
     flex-direction: column;  
     align-items: center;
     justify-content: center;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
@@ -242,7 +241,7 @@ p {
 }
 
 .affiliation img, .certification img {
-    width: 100px; /* Adjust size as needed */
+    width: 120px;  
     height: auto;
     border-radius: 10px;
 }
@@ -254,17 +253,55 @@ p {
 
 
 }
+
+.popUpImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(111, 111, 111, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.popUpImg .popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUpImg .popup-image {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.popUpImg .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
 /* contacts*/
 .container4 {
     background: white;
-    width: 80%;
+    width: 65%;
     display: flex;
     flex-direction: column;  
     align-items: center;
     justify-content: center;
-    margin-left: 300px;
+    margin-left: 250px;
     margin-right: auto;
-    margin-top: 220px;
+    margin-top: 50px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }

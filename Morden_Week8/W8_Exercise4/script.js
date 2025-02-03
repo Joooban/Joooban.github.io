@@ -1,4 +1,4 @@
-const apiKey = '80eed65c88823e132e8899495c9eec67';
+const apiKey = 'e776f80eb64b4342aac100823250302';
 const city = 'Davao';
 
 function callAPI() {
@@ -12,4 +12,5 @@ function callAPI() {
             document.querySelector("#weather_temperature").textContent = `${data.current.temp_c}°C` || 'N/A';
             document.querySelector("#weather_condition").textContent = data.current.condition.text || 'N/A';
         });
+
 }

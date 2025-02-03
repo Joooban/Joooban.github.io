@@ -42,7 +42,10 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
+
+
 button:hover {
     background-color: #0056b3;
 }

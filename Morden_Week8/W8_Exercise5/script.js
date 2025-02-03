@@ -1,6 +1,7 @@
 const quoteElement = document.getElementById('quote');
 const authorElement = document.getElementById('author');
 const button = document.getElementById('newQuoteBtn');
+const btn = document.getElementById('copyQuoteBtn');
 
 function fetchQuote() {
     quoteElement.textContent = 'Loading quote...';
@@ -29,5 +30,18 @@ function fetchQuote() {
     });
 }
 
+function copyQuoteToClipboard() {
+    const quoteText = quoteElement.textContent;
+    navigator.clipboard.writeText(quoteText)
+        .then(() => {
+            alert('Quote copied to clipboard!');
+        })
+        .catch(error => {
+            console.error('Error copying to clipboard:', error);
+        });
+}
+
+
 button.addEventListener('click', fetchQuote);
+btn.addEventListener('click',copyQuoteToClipboard);
 fetchQuote();
